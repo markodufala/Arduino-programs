@@ -134,7 +134,7 @@ void setup() {
         zaciatok();
        // delay(y);
     lcd.setCursor(4,0);
-    lcd.print("  Zaujimavy ");
+    lcd.print(" Zaujimavy ");
 
    lcd.setCursor(4,1);
    lcd.print("  projekt s "); 
