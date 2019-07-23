@@ -204,7 +204,7 @@ void setup() {
     lcd.print(" Markom");
 
    lcd.setCursor(4,1);
-   lcd.print("     Dufalom"); 
+   lcd.print("      Second"); 
    delay(2500);
         lcd.clear();
         
