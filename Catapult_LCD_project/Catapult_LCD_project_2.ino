@@ -168,7 +168,7 @@ void setup() {
         lcd.clear();
         
      
-  //  domcek();
+   // domcek();
     
  
 }
@@ -176,7 +176,8 @@ void setup() {
 //putting all the pieces together in a loop:
 void loop() {
  
-buttonState = digitalRead(buttonPin);
+
+//domcek();
 
           
 stojaciKatapult1();
@@ -237,7 +238,6 @@ void zaciatok() {
 
 // GULA A DOMCEK
 
-
 void stojaciKatapult1(){
 
   lcd.createChar(1, katapultA1);
@@ -259,6 +259,7 @@ void stojaciKatapult1(){
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(m);
+ 
 }
 
 void stojaciKatapult2() {
@@ -464,7 +465,7 @@ void stojaciKatapult10() {
   lcd.write(5);
   lcd.setCursor(2,1);
   lcd.write(6);
-  delay(2000);
+  delay(n);
 }
 
 void stojaciKatapult11() {
@@ -487,7 +488,7 @@ void stojaciKatapult11() {
   lcd.write(5);
   lcd.setCursor(2,1);
   lcd.write(6);
-  delay(n);
+  delay(2000);
  
 }
 
@@ -515,12 +516,15 @@ void stojaciKatapult12() {
   lcd.clear();
 
 }
-void otazka() { if (buttonState == HIGH) {
+void otazka() { 
+  for(int i=0; i<1000; i++){
+    buttonState = digitalRead(buttonPin);
+  if (buttonState == HIGH) {
    int v = 9;
    int v1 =v + 1;
    int v2 = v+2;
    int v3 = v+3;
-  
+  // GULA
   lcd.createChar(1,  gula1 );
   lcd.createChar(2,  gula2 );
   lcd.createChar(3,  gula3 );
@@ -563,10 +567,10 @@ void otazka() { if (buttonState == HIGH) {
   lcd.clear();
   lcd.setCursor (v3,1);
   lcd.write (4);
-  delay(2000);
- 
+  delay(150);
   lcd.clear();
 
+// HRAD
    lcd.createChar(8,  hrad20);
   lcd.createChar(9,  hrad21);  
   lcd.createChar(10, hrad22);
@@ -596,7 +600,7 @@ void otazka() { if (buttonState == HIGH) {
 
  } 
  else  (buttonState == LOW);{
-
+// 1
 lcd.createChar(1, katapultA1);
   lcd.createChar(2, katapultA2);
   lcd.createChar(3, katapultA3);
@@ -616,8 +620,8 @@ lcd.createChar(1, katapultA1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(m);
-
-lcd.createChar(1, katapultB1);
+//2
+  lcd.createChar(1, katapultB1);
   lcd.createChar(2, katapultB2);
   lcd.createChar(3, katapultB3);
   lcd.createChar(4, katapultB4);
@@ -636,7 +640,7 @@ lcd.createChar(1, katapultB1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(p);
-
+//3
 lcd.createChar(1, katapultC1);
   lcd.createChar(2, katapultC2);
   lcd.createChar(3, katapultC3);
@@ -656,7 +660,7 @@ lcd.createChar(1, katapultC1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(q );
-
+//4
 lcd.createChar(1, katapultD1);
   lcd.createChar(2, katapultD2);
   lcd.createChar(3, katapultD3);
@@ -676,7 +680,7 @@ lcd.createChar(1, katapultD1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(n);
-
+//5
 lcd.createChar(1, katapultE1);
   lcd.createChar(2, katapultE2);
   lcd.createChar(3, katapultE3);
@@ -696,7 +700,7 @@ lcd.createChar(1, katapultE1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(o);
-
+//6
 lcd.createChar(1, katapultF1);
   lcd.createChar(2, katapultF2);
   lcd.createChar(3, katapultF3);
@@ -716,7 +720,7 @@ lcd.createChar(1, katapultF1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(n);
-
+//7
 lcd.createChar(1, katapultG1);
   lcd.createChar(2, katapultG2);
   lcd.createChar(3, katapultG3);
@@ -736,7 +740,7 @@ lcd.createChar(1, katapultG1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(n);
-
+//8
 lcd.createChar(1, katapultH1);
   lcd.createChar(2, katapultH2);
   lcd.createChar(3, katapultH3);
@@ -756,7 +760,7 @@ lcd.createChar(1, katapultH1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(n);
-
+//9
 lcd.createChar(1, katapultI1);
   lcd.createChar(2, katapultI2);
   lcd.createChar(3, katapultI3);
@@ -776,7 +780,7 @@ lcd.createChar(1, katapultI1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(n);
-
+//10
 lcd.createChar(1, katapultJ1);
   lcd.createChar(2, katapultJ2);
   lcd.createChar(3, katapultJ3);
@@ -796,7 +800,7 @@ lcd.createChar(1, katapultJ1);
   lcd.setCursor(2,1);
   lcd.write(6);
   delay(n);
-
+//11
 lcd.createChar(1, katapultK1);
   lcd.createChar(2, katapultK2);
   lcd.createChar(3, katapultK3);
@@ -815,8 +819,8 @@ lcd.createChar(1, katapultK1);
   lcd.write(5);
   lcd.setCursor(2,1);
   lcd.write(6);
-  delay(2000);
-
+  delay(500);
+//12
 lcd.createChar(1, katapultL1);
   lcd.createChar(2, katapultL2);
   lcd.createChar(3, katapultL3);
@@ -835,11 +839,11 @@ lcd.createChar(1, katapultL1);
   lcd.write(5);
   lcd.setCursor(2,1);
   lcd.write(6);
-  delay(2000);
+  delay(500);
   lcd.clear();
 
-}
-
-}
+            }
+      }
+ }
 
   
