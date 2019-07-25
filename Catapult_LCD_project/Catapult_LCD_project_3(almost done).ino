@@ -2,7 +2,7 @@
 
 LiquidCrystal lcd(0, 1, 8, 9, 10, 11);
 
-int buttonPin = 4;
+int buttonPin = 7;
 int buttonState = 0;
 int m =  800;
 int n =  100;
