@@ -37,92 +37,95 @@ pinMode(ledPin8, OUTPUT);
 pinMode(ledPin9, OUTPUT);
 pinMode(ledPin10, OUTPUT);
 pinMode(ledPin11, OUTPUT);
-
-ledPin1();
-ledPin2();
-ledPin3();
-ledPin4();
-ledPin5();
-ledPin6();
-ledPin7();
-ledPin8();
-ledPin9();
-ledPin10();
-ledPin11();
-
-
 }
 
-void ledPin1() {
+void loop (){
+ledPin100();
+ledPin200();
+ledPin300();
+ledPin400();
+ledPin500();
+ledPin600();
+ledPin700();
+ledPin800();
+ledPin900();
+ledPin1000();
+ledPin1100();
+}
+
+
+
+void ledPin100() {
     digitalWrite (ledPin1, HIGH);
     delay(200);
     digitalWrite (ledPin1, LOW);
     delay (100);
   
 }
-void ledPin2() {
+void ledPin200() {
     digitalWrite (ledPin2, HIGH);
     delay(200);
     digitalWrite (ledPin2, LOW);
     delay (100);
   
 }
-void ledPin3() {
+void ledPin300() {
     digitalWrite (ledPin3, HIGH);
     delay(200);
     digitalWrite (ledPin3, LOW);
     delay (100);
   
 }
-void ledPin4() {
+void ledPin400() {
     digitalWrite (ledPin4, HIGH);
     delay(200);
     digitalWrite (ledPin4, LOW);
     delay (100);
   
 }
-void ledPin5() {
+void ledPin500() {
     digitalWrite (ledPin5, HIGH);
     delay(200);
     digitalWrite (ledPin5, LOW);
     delay (100);
   
 }
-void ledPin6() {
+void ledPin600() {
     digitalWrite (ledPin6, HIGH);
     delay(200);
     digitalWrite (ledPin6, LOW);
     delay (100);
   
 }
-void ledPin7() {
+void ledPin700() {
     digitalWrite (ledPin7, HIGH);
     delay(200);
     digitalWrite (ledPin7, LOW);
     delay (100);
   
 }
-void ledPin8() {
+void ledPin800() {
     digitalWrite (ledPin8, HIGH);
     delay(200);
     digitalWrite (ledPin8, LOW);
     delay (100);
   
 }
-void ledPin9() {
+void ledPin900() {
     digitalWrite (ledPin9, HIGH);
     delay(200);
     digitalWrite (ledPin9, LOW);
     delay (100);
   
 }
-void ledPin10() {
+void ledPin1000() {
     digitalWrite (ledPin10, HIGH);
     delay(200);
     digitalWrite (ledPin10, LOW);
     delay (100);
   
-}void ledPin11() {
+}
+void ledPin1100() {
     digitalWrite (ledPin11, HIGH);
     delay(200);
     digitalWrite (ledPin11, LOW);
