@@ -1,0 +1,261 @@
+#include <Button.h>
+
+
+
+
+
+//input (buttons)
+//int buttonPinL = 13;
+Butoon button1 = Butoon(13,PULLUP)
+//int buttonPinR =  14;
+Butoon button2 = Butoon(14,PULLUP)
+
+//state of buttonns
+int buttonStateL = 0;
+int buttonStateR = 0;
+//leds output
+int ledPin1  = 12;
+int ledPin2  = 11;
+int ledPin3  = 10;
+int ledPin4  = 9;
+int ledPin5  = 8;
+int ledPin6  = 7;
+int ledPin7  = 6;
+int ledPin8  = 5;
+int ledPin9  = 4;
+int ledPin10 = 3;
+int ledPin11 = 2;
+
+int ledPins [] = {2,3,4,5,6,7,8,9,10,11,12};
+
+
+int x = 100;
+
+
+
+
+
+void setup() {
+  
+pinMode(ledPin1, OUTPUT);
+pinMode(ledPin2, OUTPUT);
+pinMode(ledPin3, OUTPUT);
+pinMode(ledPin4, OUTPUT);
+pinMode(ledPin5, OUTPUT);
+pinMode(ledPin6, OUTPUT);
+pinMode(ledPin7, OUTPUT);
+pinMode(ledPin8, OUTPUT);
+pinMode(ledPin9, OUTPUT);
+pinMode(ledPin10, OUTPUT);
+pinMode(ledPin11, OUTPUT);
+
+for(int i=0; i<11; i++){
+  pinMode(ledPins[i], OUTPUT);  
+}
+
+pinMode(buttonPinL,INPUT_PULLUP);
+pinMode(buttonPinR,INPUT_PULLUP);
+
+
+}
+
+void loop (){
+ledPin100();
+ledPin200();
+ledPin300();
+ledPin400();
+ledPin500();
+ledPin600();
+ledPin700();
+ledPin800();
+ledPin900();
+ledPin1000();
+ledPin1100();
+
+ledPin1100();
+ledPin1000();
+ledPin900();
+ledPin800();
+ledPin700();
+ledPin600();
+ledPin500();
+ledPin400();
+ledPin300();
+ledPin200();
+ledPin100();
+
+
+
+}
+
+
+
+void ledPin100() {
+    digitalWrite (ledPin1, HIGH);
+    delay(200);
+    digitalWrite (ledPin1, LOW);
+    delay (100);
+  
+}
+void ledPin200() {
+    digitalWrite (ledPin2, HIGH);
+    delay(200);
+    digitalWrite (ledPin2, LOW);
+    delay (100);
+  
+}
+void ledPin300() {
+    digitalWrite (ledPin3, HIGH);
+    delay(200);
+    digitalWrite (ledPin3, LOW);
+    delay (100);
+  
+}
+void ledPin400() {
+    digitalWrite (ledPin4, HIGH);
+    delay(200);
+    digitalWrite (ledPin4, LOW);
+    delay (100);
+  
+}
+void ledPin500() {
+    digitalWrite (ledPin5, HIGH);
+    delay(200);
+    digitalWrite (ledPin5, LOW);
+    delay (100);
+int buttonStateL = 0;
+int buttonStateR = 0;
+}
+void ledPin600() {
+//buttonStateL = digitalRead(buttonPinL);
+//buttonStateR = digitalRead(buttonPinR);
+
+if (digitalRead(buttonPinL) == HIGH){
+  //blink 1
+  for(int i=0; i<11;i++){
+    digitalWrite(ledPins[i], HIGH);
+    
+}
+delay(x);
+
+for(int i=0; i<11;i++){
+  digitalWrite(ledPins[i], LOW);
+    
+  }
+delay(x);
+//blink 2
+for(int i=0; i<11;i++){
+    digitalWrite(ledPins[i], HIGH);
+    
+}
+delay(x);
+
+for(int i=0; i<11;i++){
+  digitalWrite(ledPins[i], LOW);
+    
+  }
+delay(x);
+//blink 3
+for(int i=0; i<11;i++){
+    digitalWrite(ledPins[i], HIGH);
+    
+}
+delay(x);
+
+for(int i=0; i<11;i++){
+  digitalWrite(ledPins[i], LOW);
+    
+  }
+delay(x);
+
+if (digitalRead(buttonPinR)== HIGH){
+
+//blink 1
+  for(int i=0; i<11;i++){
+    digitalWrite(ledPins[i], HIGH);
+    
+}
+delay(x);
+
+for(int i=0; i<11;i++){
+  digitalWrite(ledPins[i], LOW);
+    
+  }
+delay(x);
+//blink 2
+for(int i=0; i<11;i++){
+    digitalWrite(ledPins[i], HIGH);
+    
+}
+delay(x);
+
+for(int i=0; i<11;i++){
+  digitalWrite(ledPins[i], LOW);
+    
+  }
+delay(x);
+//blink 3
+for(int i=0; i<11;i++){
+    digitalWrite(ledPins[i], HIGH);
+    
+}
+delay(x);
+
+for(int i=0; i<11;i++){
+  digitalWrite(ledPins[i], LOW);
+    
+  }
+delay(x);
+
+
+
+
+
+
+  
+}
+
+
+   
+
+}else {
+digitalWrite(ledPin6, LOW);
+}
+}
+
+void ledPin700() {
+    digitalWrite (ledPin7, HIGH);
+    delay(200);
+    digitalWrite (ledPin7, LOW);
+    delay (100);
+int buttonStateL = 0;
+int buttonStateR = 0;
+}
+void ledPin800() {
+    digitalWrite (ledPin8, HIGH);
+    delay(200);
+    digitalWrite (ledPin8, LOW);
+    delay (100);
+  
+}
+void ledPin900() {
+    digitalWrite (ledPin9, HIGH);
+    delay(200);
+    digitalWrite (ledPin9, LOW);
+    delay (100);
+  
+}
+void ledPin1000() {
+    digitalWrite (ledPin10, HIGH);
+    delay(200);
+    digitalWrite (ledPin10, LOW);
+    delay (100);
+  
+}
+void ledPin1100() {
+    digitalWrite (ledPin11, HIGH);
+    delay(200);
+    digitalWrite (ledPin11, LOW);
+    delay (100);
+  
+}
